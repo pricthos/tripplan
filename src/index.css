@@ -1,0 +1,25 @@
+:root{
+  /*공통*/
+  --white: #ffffff;
+  --gray10: #FAFAFC;
+  --gray20: #F4F6FA;
+  --gray30: #EAEDF4;
+  --gray40: #D7DCE5;
+  --gray50: #B4C0D3;
+  --gray60: #96A0B5;
+  --gray70: #8491A7;
+  --gray90: #5C667B;
+  --gray100: #475067;
+  --gray110: #373F57;
+  --gray120: #292E41;
+  --blue10: #F7FAFE;
+  --blue20: #F3F7FF;
+  --blue30: #E9F3FF;
+  --blue40: #D1E6FF;
+  --blue80: #4876EF;
+  --blue100: #315AE9;
+  --red20: #FFF5F7;
+  --red40: #FFD1D1;
+  --red90: #FF5656;
+  --bg01: #FAFAFC;
+}

@@ -1,0 +1,126 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 200;
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraLight.woff') format('woff');
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 400;
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 600;
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-SemiBold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 800;
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-ExtraBold.woff') format('woff');
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 900;
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Black.woff') format('woff');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Pretendard',sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    color:var(--gray120);
+    background-color: var(--gray40);
+    font-weight: 400;
+}
+
+* {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /* 하이라이트 효과를 제거 */
+}
+
+html::-webkit-scrollbar {width: 5px;}
+html::-webkit-scrollbar-track {background: #eceff3;}
+html::-webkit-scrollbar-thumb {background: #a1acbb;}
+html::-webkit-scrollbar-thumb:hover {background: #7e94b4;}
+
+body,ul,dl,ol,li,dl,dt{margin:0; padding:0; list-style-type:none;}
+a{ text-decoration:none; color:var(--gray120);}
+.fend{clear:both;}
+img{ vertical-align:top; border:0; -webkit-user-drag: none; -moz-user-select: none; -ms-user-select: none; user-select: none;}
+
+.wrap{ width:400px; min-height: 100vh; margin: 0 auto; background-color: #eff2f7;}
+.wrap .top{ display: flex; align-items: center; font-size: 18px; font-weight: 700; height: 56px; background-color: #fff; border-bottom: solid 1px var(--gray20);}
+.wrap .top img{ height: 24px; margin: 0 8px 0 16px;}
+.wrap .tab{ position: sticky; top:0; display: flex; align-items: center; height: 50px; background-color: #fff; border-bottom: solid 1px var(--gray30); padding: 0 0 0 8px; color: var(--gray70); z-index: 500;}
+.wrap .tab ul{ position: relative; line-height: 50px; padding: 0 8px 0 8px; margin-right: 8px; cursor: pointer;}
+.wrap .tab ul.on{ color: var(--blue100); font-weight: 700;}
+.wrap .tab ul.on::before{ content: ''; position: absolute; bottom: -1px; left: 0; height: 3px; width:100%; background-color: var(--blue100);}
+.wrap .list{ padding: 8px 0 0 0;}
+.wrap .list ul{ position: relative; border-radius: 4px; background-color: #fff; min-height: 80px; margin: 0 8px 8px 8px; overflow: hidden; box-shadow: 0 4px 6px -2px #1018280A}
+.wrap .list .default{ display: flex; flex-wrap: wrap;}
+.wrap .list .default .info{ width:calc(100% - 96px); padding: 0 0 0 16px;}
+.wrap .list .default .info .date{ font-size: 12px; color: var(--gray50); font-weight: 600; padding: 6px 0 0 0;}
+.wrap .list .default .info .title{ font-weight: 700; font-size: 16px; line-height: 24px; padding: 0 0 4px 0;}
+.wrap .list .default .info .txt{ color: var(--gray60); font-size: 13px; line-height: 16px; padding: 0 0 10px 0;}
+.wrap .list .default .thumb{ position: relative; width:80px;}
+.wrap .list .default .thumb .qty{ position: absolute; top:8px; right: 8px; width:18px; height: 18px; line-height: 18px; border-radius: 18px; text-align: center; font-size: 11px; background-color: var(--blue100); color: #fff; z-index: 50;}
+.wrap .list .default .thumb .box{ position: absolute; top:16px; right: 16px; width:50px; height: 50px; border-radius: 8px; overflow: hidden; cursor: pointer;}
+.wrap .list .default .thumb .box img{ position: absolute; top:0; left: 0; width:100%; height: 100%; object-fit: cover;}
+.wrap .list .default .thumb .box img:nth-child(1){ z-index: 30;}
+.wrap .list .default .link{ display: flex; background-color: var(--gray10); width:100%; height: 36px; overflow-x: auto; overflow-y: hidden; white-space: nowrap; -webkit-overflow-scrolling: touch;}
+.wrap .list .default .link::-webkit-scrollbar { display: none;}
+.wrap .list .default .link li{ background-color: #fff; border: solid 1px var(--gray30); border-radius: 100px; font-size: 12px; height: 20px; line-height: 20px; padding: 0 8px 0 8px; margin: 8px 8px 0 0; color: var(--gray50); cursor: pointer;}
+.wrap .list .default .link li:nth-child(1){ margin: 8px 8px 0 8px;}
+
+.wrap .list .move .ico{ position: absolute; top:16px; right: 16px; width:16px; height: 16px;}
+.wrap .list .move .ico.planeStart{ background: url(images/plane_start.svg) no-repeat center center; background-size: contain;}
+.wrap .list .move .ico.planeEnd{ background: url(images/plane_end.svg) no-repeat center center; background-size: contain;}
+.wrap .list .move .ico.taxi{ background: url(images/taxi.svg) no-repeat center center; background-size: contain;}
+.wrap .list .move .ico.bus{ background: url(images/bus.svg) no-repeat center center; background-size: contain;}
+.wrap .list .move .ico.subway{ background: url(images/subway.svg) no-repeat center center; background-size: contain;}
+.wrap .list .move .ico.walk{ background: url(images/walk.svg) no-repeat center center; background-size: contain;}
+.wrap .list .move .ico.boat{ background: url(images/boat.svg) no-repeat center center; background-size: contain;}
+.wrap .list .move .price{ position: absolute; bottom: 8px; right: 16px; font-size: 12px; color:var(--gray50);}
+.wrap .list .move .info{ width:calc(100% - 96px); padding: 0 0 0 16px;}
+.wrap .list .move .info .date{ font-size: 12px; color: var(--gray50); font-weight: 600; padding: 6px 0 0 0;}
+.wrap .list .move .info .title{ font-weight: 700; font-size: 16px; line-height: 24px; padding: 0 0 4px 0;}
+.wrap .list .move .info .txt{ display: flex; align-items: center; color: var(--gray60); font-size: 13px; line-height: 16px; padding: 0 0 10px 0;}
+.wrap .list .move .info .txt .arw{ margin: 0 4px 0 4px;}
+.wrap .list .move .info .txt .arw::before{ content: '\21E2';}
+
+@media(max-width:600px) {
+    .wrap{ width:100%; min-height: 100vh; margin: 0 auto; background-color: #eff2f7;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
